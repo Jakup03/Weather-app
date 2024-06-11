@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10sp"
+    android:background="@color/forecastBackground"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@+id/guideline"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/dayForecast"
+        style="@style/singleViewHolder"
+        android:gravity="bottom|center" />
+
+    <TextView
+        android:id="@+id/hourForecast"
+        style="@style/singleViewHolder"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:src="@drawable/sunny" />
+
+    <TextView
+        android:id="@+id/temperatureForecast"
+        style="@style/singleViewHolder"/>
+
+</LinearLayout>
